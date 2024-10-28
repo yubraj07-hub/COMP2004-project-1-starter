@@ -5,6 +5,8 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: #242424;
+  color: rgb(233, 226, 226);
 }
 
 .NavBar {
@@ -12,13 +14,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 0px;
   border-radius: 8px;
   height: 100%;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .NavDiv {
-  width: 33%;
+  width: 36%;
 }
 
 .NavTitle {
@@ -35,27 +39,27 @@
 .NavUser {
   text-align: left;
   padding: 0 10px;
+  font-weight:bold
 }
 
 .GroceriesApp-Container {
   width: 100%;
   display: flex;
   justify-content: space-between;
-
   /* max-width: 800px; */
   /* border: 1px solid white; */
 }
 
 .CartContainer {
+  display: flex;
+  flex-direction: column;
   width: 25%;
   justify-content: center;
 
-  /* position: sticky; */
-  /* top: 0; Adjust this value as needed */
-  /* max-height: 100vh; Ensure it doesn't exceed the viewport height */
-  /* overflow-y: auto; Add scroll if content exceeds the container height */
-
-  /* border: 1px solid white; */
+  position: sticky;
+  top: 0;
+  max-height: 100vh;
+  overflow-y: auto;
 }
 
 .CartCard {
@@ -68,6 +72,8 @@
   border-radius: 10px;
   margin: 10px;
   padding: 5px;
+  color: rgb(233, 226, 226);
+  height: 200px;
   background-color: rgb(43, 48, 54);
 }
 
@@ -93,6 +99,10 @@
   margin: 10px;
   padding: 5px;
 }
+.addtocart{
+  background-color: black;
+  color: rgb(233, 226, 226);
+}
 
 .ProductQuantityDiv {
   display: flex;
@@ -104,16 +114,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 25px;
-  height: 25px;
-  border: 1px solid white;
-  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  color: rgb(233, 226, 226);
+  background-color: black;
+  border: 1px solid rgb(24, 24, 24);
+  border-radius: 10%;
   cursor: pointer;
   margin: 0 5px;
 }
-.QuantityBtn:hover {
+/* .QuantityBtn:hover {
   background-color: rgb(76, 43, 226);
-}
+} */
 
 img {
   height: 50px;
@@ -143,11 +155,22 @@ img {
   justify-content: space-around;
 }
 
+.cartbtndiv{
+  display: flex;
+  position: absolute;
+  justify-content:space-between;
+  left: 1rem;
+}
 .RemoveButton {
+  bottom: 30px;
   background-color: rgb(190, 0, 0);
+  color:white;
 }
 
 #BuyButton {
   background-color: green;
-  width: 50%;
+  height: 60px;
+  position:relative;
+  left:20px;
+  color: white;
 }
